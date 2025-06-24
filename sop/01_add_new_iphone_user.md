@@ -103,4 +103,5 @@ smb: \> ls
 ## Notes
 - Keep consistent naming convention for directories and shares
 - Document new user addition in system documentation
+- No additional PhotoPrism configuration needed - new user's photos will automatically appear in the web interface
 - Consider backup space requirements for new user

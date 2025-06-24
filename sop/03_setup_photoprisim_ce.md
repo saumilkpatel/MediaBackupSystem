@@ -48,11 +48,9 @@ sudo apt install -y docker-compose
 ```bash
 # Create directories
 sudo mkdir -p /docker/photoprisim/storage
-sudo mkdir -p /docker/photoprisim/originals
 
-# Create symbolic links to backup directories
-sudo ln -s /backup/saumil /docker/photoprisim/originals/saumil
-sudo ln -s /backup/vaishnavi /docker/photoprisim/originals/vaishnavi
+# Create symbolic link to backup directory
+sudo ln -s /backup /docker/photoprisim/originals
 
 # Set permissions
 sudo chown -R $USER:$USER /docker/photoprisim

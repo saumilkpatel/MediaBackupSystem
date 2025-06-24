@@ -212,10 +212,9 @@ PhotoPrism Community Edition provides a web-based interface for viewing and mana
    ```
    /docker/photoprisim/
    ├── storage/          # PhotoPrism database and cache
-   └── originals/        # Symbolic links to backup directories
-       ├── saumil/       -> /backup/saumil
-       └── vaishnavi/    -> /backup/vaishnavi
-   ```
+   └── originals/        # Symbolic link to backup directory
+       └── -> /backup    # All user directories accessible here
+```
 
 4. **Integration**
    - Direct access to existing backup structure
