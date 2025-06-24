@@ -32,6 +32,7 @@ An automated system that detects when phones connect to the home WiFi network an
 - Local storage on physical hard drive
 - Zero-interaction backup process
 - High-speed SMB file transfer
+- Web interface for viewing photos (PhotoPrism)
 - Multi-user support with separate backup spaces
 
 ## System Configuration
@@ -190,6 +191,37 @@ File: `/etc/samba/smb.conf`
      - MOV components of Live Photos will be stored in the photos directory
      - Keeps Live Photo components together for better organization
      - Prevents MOV files from being split into the videos folder
+
+### Web Interface (PhotoPrism)
+PhotoPrism Community Edition provides a web-based interface for viewing and managing backed up photos.
+
+1. **Access**
+   - Web Interface: `http://raspberry-pi-ip:2342`
+   - Mobile-friendly responsive design
+   - Secure login required
+
+2. **Key Features**
+   - Photo viewing and organization
+   - Face detection
+   - Location mapping
+   - Auto-tagging
+   - Search capabilities
+   - Mobile-friendly interface
+
+3. **Directory Structure**
+   ```
+   /docker/photoprisim/
+   ├── storage/          # PhotoPrism database and cache
+   └── originals/        # Symbolic links to backup directories
+       ├── saumil/       -> /backup/saumil
+       └── vaishnavi/    -> /backup/vaishnavi
+   ```
+
+4. **Integration**
+   - Direct access to existing backup structure
+   - No file duplication
+   - Automatic monitoring of new photos
+   - Preserves original folder organization
 
 ## Project Status
 🚧 Initial Development - Project setup phase

@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial project setup with IntelliJ IDEA
 - Created README.md with basic project structure
 - Created CHANGELOG.md for tracking project history
+- Added PhotoPrism Community Edition setup documentation
 - Defined project vision and core features
 - Specified hardware architecture and components
 - Configured external drive mounting with exFAT filesystem
@@ -33,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Next Steps
 - Swap in new hard drive when delivered
+- Set up PhotoPrism for web-based photo viewing
 
 #### 2025-06-22
 - Multi-User Support:
