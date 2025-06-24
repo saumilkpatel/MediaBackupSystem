@@ -65,7 +65,7 @@ sudo mkdir -p /backup
 
 2. Mount the drive:
 ```bash
-sudo mount -o uid=1000,gid=1000 /dev/sdX1 /backup
+sudo mount -o uid=1001,gid=1001 /dev/sdX1 /backup
 ```
 
 ### 5. Create User Directories
@@ -116,7 +116,7 @@ sudo nano /etc/fstab
 ```
 Add line:
 ```
-/dev/sdX1  /backup  exfat  defaults,uid=1000,gid=1000  0  0
+/dev/sdX1  /backup  exfat  defaults,uid=1001,gid=1001  0  0
 ```
 
 ## Troubleshooting

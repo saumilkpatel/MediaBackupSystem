@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Modified Samba configuration to use 'photosync' user instead of 'saumil'
 - Changed mount point structure to support multiple users
 - Reorganized backup directories for multiple users (Saumil and Vaishnavi)
+- Updated mount configuration to use correct photosync UID/GID (1001)
 
 ### Development Log
 

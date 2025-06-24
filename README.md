@@ -17,7 +17,7 @@ An automated system that detects when phones connect to the home WiFi network an
   - Separate directories for each user:
     - `/backup/saumil`
     - `/backup/vaishnavi`
-  - Mount configuration: `uid=1000,gid=1000`
+  - Mount configuration: `uid=1001,gid=1001`
   - Serves as the backup storage destination
 - **iPhones**
   - Multiple source devices for media content
@@ -42,7 +42,7 @@ An automated system that detects when phones connect to the home WiFi network an
 lsblk
 
 # Mount external drive with user permissions
-sudo mount -o uid=1000,gid=1000 /dev/sda1 /backup
+sudo mount -o uid=1001,gid=1001 /dev/sda1 /backup
 
 # Create user-specific backup directories
 sudo mkdir -p /backup/saumil
@@ -60,7 +60,7 @@ sudo chmod -R 777 /backup/vaishnavi
   - `/backup/saumil` - Saumil's media backup
   - `/backup/vaishnavi` - Vaishnavi's media backup
 - Mount options:
-  - `uid=1000,gid=1000`: Sets ownership to user ID 1000 and group ID 1000
+  - `uid=1001,gid=1001`: Sets ownership to photosync user (UID=1001) and group (GID=1001)
   - Device path: `/dev/sda1`
 - Use `lsblk` to:
   - Verify drive detection
